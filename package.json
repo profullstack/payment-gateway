@@ -1,0 +1,46 @@
+{
+  "name": "@profullstack/payment-gateway",
+  "version": "0.2.0",
+  "description": "Unified payment gateway abstraction for multiple payment providers",
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "exports": {
+    ".": "./dist/index.js",
+    "./stripe": "./dist/providers/stripe.js",
+    "./paypal": "./dist/providers/paypal.js",
+    "./crypto": "./dist/providers/crypto.js",
+    "./mock": "./dist/providers/mock.js"
+  },
+  "scripts": {
+    "build": "mkdir -p dist && cp -r src/* dist/",
+    "test": "node test/index.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "payment",
+    "gateway",
+    "stripe",
+    "paypal",
+    "crypto",
+    "checkout",
+    "subscription",
+    "webhook"
+  ],
+  "author": "ProFullStack",
+  "license": "MIT",
+  "dependencies": {
+    "eventemitter3": "^5.0.1"
+  },
+  "optionalDependencies": {
+    "stripe": "^14.20.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/profullstack/payment-gateway"
+  },
+  "bugs": {
+    "url": "https://github.com/profullstack/payment-gateway/issues"
+  },
+  "homepage": "https://github.com/profullstack/payment-gateway#readme"
+}
