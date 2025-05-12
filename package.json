@@ -1,6 +1,6 @@
 {
   "name": "@profullstack/payment-gateway",
-  "version": "0.2.9",
+  "version": "0.2.10",
   "description": "Unified payment gateway abstraction for multiple payment providers",
   "type": "module",
   "main": "dist/index.js",
