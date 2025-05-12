@@ -621,7 +621,6 @@ export { PaymentGateway };
 
 // Export provider factories
 export { createStripeProvider } from './providers/stripe.js';
-export { createPayPalProvider } from './providers/paypal.js';
 export { createCryptoProvider } from './providers/crypto.js';
 export { createMockProvider } from './providers/mock.js';
 
